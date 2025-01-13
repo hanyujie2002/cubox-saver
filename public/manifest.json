@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Cubox 页面收藏",
+  "options_ui": {
+    "page": "src/options/index.html",
+    "open_in_tab": false
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "description": "通过 Cubox 提供的 API 链接进行页面的收藏",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "commands": {
+    "open-search-popup": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Open search popup"
+    }
+  }
+}
